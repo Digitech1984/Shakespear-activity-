@@ -1,0 +1,12 @@
+
+import random
+#list of possible answers
+answer = ["no","yes","maybe","It is certain","Without a doubt","You may rely on it","Yes, definately","It is decidedly so","Ah I see it, yes","Most Likely","Outlook good","Signs point to yes","Better not tell you now","Ask again later","Cannot predict now","concentrate and ask again","Outlook not so good","Don't count on it","Very doubtful","my sources say no","My reply is no","Ofcourse, how could you be so blind"]
+#asks if user wants to play
+user_input = input("Would you like to talk to the Magic 8 ball\nRemember you can only ask a yes or no question\nOtherwise the result might not be understandable\n\n")
+#while user wants to play then the program will ask the user to ask a question
+while user_input == "yes":
+  user_question = input("\nask a 'yes' OR 'no'question\n")
+  print(random.choice(answer))
+#otherwise program says "ok bye"
+print("ok bye")
